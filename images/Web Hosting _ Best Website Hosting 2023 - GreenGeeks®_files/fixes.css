@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+}
+
+
+@media(min-width: 768px) {
+    .menu-fix > ul > li .mega-menu-content {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: visibility 0s, opacity 0.5s linear  !important;
+    }
+
+    .menu-fix > ul > li:hover .mega-menu-content {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+.menu-fix > ul > li.sfHover .mega-menu-content {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+button.menu-trigger {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    background: transparent;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    line-height: inherit !important;
+}
